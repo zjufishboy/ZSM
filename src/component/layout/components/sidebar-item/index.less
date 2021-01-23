@@ -1,0 +1,14 @@
+@import '@/global/style/mixin.less';
+@import '@/global/style/variable.less';
+.zsm-sidebar-item {
+  width: 100%;
+  height: 40px;
+  padding-left: 30px;
+  .flex(row,flex-start,center);
+  cursor: pointer;
+  &-active {
+    border-right: 2px solid @zsmBlue;
+    background-color: fade(@zsmBlue, 10%);
+    color: @zsmBlue;
+  }
+}

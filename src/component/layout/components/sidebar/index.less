@@ -1,0 +1,22 @@
+@import '@/global/style/mixin.less';
+@import '@/global/style/variable.less';
+
+.zsm-sidebar {
+  height: 100vh;
+  width: 20%;
+  min-width: 200px;
+  background-color: white;
+  border-right: 1px solid #f0f0f0;
+  .zsm-logo {
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    background-color: black;
+    &-content {
+      height: 100%;
+      .flex();
+      background-color: fade(@zsmBlue, 20%);
+      color: @zsmBlue;
+    }
+  }
+}
